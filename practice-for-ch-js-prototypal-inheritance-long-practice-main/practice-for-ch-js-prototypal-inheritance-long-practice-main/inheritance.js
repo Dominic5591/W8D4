@@ -1,16 +1,16 @@
-Function.prototype.inherits = function(Parent) {
+Function.prototype.inherits = function (Parent) {
   function thisProto() {}
   thisProto.prototype = Parent.prototype;
   this.prototype = new thisProto();
 
   this.prototype.constructor = this;
   
-}
+};
 
-function MovingObject () {}
+function MovingObject() {}
 
-function Ship () {}
+function Ship() {}
 Ship.inherits(MovingObject);
 
-function Asteroid () {}
+function Asteroid() {}
 Asteroid.inherits(MovingObject);

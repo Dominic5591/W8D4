@@ -94,7 +94,6 @@ function curriedSum(nLength) {
       return nums.reduce((a, e) => a + e);
     }
   }
-
   return sum;
 }
 
